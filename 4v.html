@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Attribute selector Example</title>
+<style>
+/*selects all elements with a title attribute*/
+[title]{
+color:blue;
+font-weight;bold;
+}
+/*selects allelements with a title attribute equal to 'tooltip'*/
+[title="tooltip"]{
+text-decoration:underline;
+}
+/*selects all input elements with a type attribute equal to 'text'*/
+input[type="text"]{
+border:2px solid green;
+padding:5px;
+}
+/* selects all links(a elements) where the href attribute starts with 'https'*/
+a[href^="https"]{
+color:red;
+}
+/*selects all links(a elements) where the href attribute ends with'.org'*/
+a[href$=".org"]{
+color:orange;
+}
+/*selects all links(a elements) where the href attribute contains 'example'*/
+a[href*="example"]{
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<h1>Attribute selector Example</h1>
+<p title="tooltip">This paragraph has a title attribute with the value 'tooltip'.</p>
+<p title="info"> This paragraph has a title attribute with the value 'info'.</p>
+<input type="text" placeholder="Type here...">
+<input type="password" placeholder="password">
+<p>check out these links:</p>
+<a
+href="https://www.example.com">Example
+secure link</a><br>
+<a href="https://www.sample.org">sample
+secure organisation link</a>
+</body>
+</html>
