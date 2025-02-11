@@ -1,0 +1,27 @@
+//script.js
+function show AlertExternal(){
+alert('this is an external java scriptalert!');
+}
+HTML FILE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<title>Embedding internal and external javascript</title>
+<script src="script.js"></script><!--link to external javascript file-->
+<script>
+//internal javascript
+function showalertinternal(){
+alert("this is an internal javascript alert!");
+}
+</script>
+</head>
+<body>
+<h1> embedding internal and external javascript</h1>
+<button onclick="shpwalertinternal()">intenal
+javascript alert</button>
+<button onclick="showalertexternal()">external
+javascript alert</button>
+</body>
+</html>
